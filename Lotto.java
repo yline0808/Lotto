@@ -1,6 +1,7 @@
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.Arrays;
 
 class SHA256 {
     public byte[] encrypt_byte(String text, String salt) throws NoSuchAlgorithmException {
@@ -96,7 +97,7 @@ public class Lotto {
                 i++;
             }
         }
-
+        Arrays.sort(lottoNumbers);
         pList(lottoNumbers);
     }
 }
